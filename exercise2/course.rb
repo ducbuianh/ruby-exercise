@@ -4,6 +4,6 @@ class Course
 
   def initialize (name)
     self.name = name
-    self.student_info = []
+    self.student_info = {}
   end
 end
