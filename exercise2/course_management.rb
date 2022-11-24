@@ -30,7 +30,7 @@ class Program
         puts "Plase input only 1 to 5"
       end
 
-    end 
+    end
   end
 
   def add_student
@@ -76,6 +76,16 @@ class Program
   end
 
   def look_up_student_grade
+    if @@students.length == 0
+      puts "No student recorded"
+      return
+    end
+
+    if @@courses.length == 0
+      puts "No course recorded"
+      return
+    end
+
     puts "\nPlease enter student ID:"
     student_id = validate_existed_student_id
 
